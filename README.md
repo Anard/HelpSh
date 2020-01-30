@@ -22,4 +22,4 @@ All tags can be used together
 ${normal} tag resets all changes made in Terminal
 Read file help.cnf for other tags and colors names
 
-CAREFUL : Always finish your command by a ${normal}. Else your changes will still apply to every Terminal output.
+IMPORTANT : Always finish your command by a ${normal}. Else your changes will still apply to every Terminal output.
