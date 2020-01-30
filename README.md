@@ -7,14 +7,14 @@ Use on top of your scripts :
 - configPath="/usr/local/lib"
 - source ${configPath}/help.cnf
 
-In the script, use echo with:
+In the script, use :
 
-- ${bold}Bold text${normal}
-- ${underline}Underlined text${nounderline}
+- echo "${bold}Bold text${normal}"
+- echo "${underline}Underlined text${nounderline}"
 
-For more specific commands, use echo with option -e and
-- ${italic}Italic text${normal}
-- ${COLORNAME}Colorized text${nocolor}
+For more specific commands, use echo with option -e :
+- echo -e "${italic}Italic text${normal}"
+- echo -e "${COLORNAME}Colorized text${nocolor}"
 
 All tags can be used together
 ${normal} tag resets all changes made in Terminal
