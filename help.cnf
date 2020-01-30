@@ -10,6 +10,7 @@ normal=$(tput sgr0)
 italic='\x1b[3m'
 blink='\x1b[5m'
 invert='\x1b[7m'
+invisible='\x1b[8m'
 
 # colors
 black='\033[0;30m'
