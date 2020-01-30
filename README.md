@@ -14,6 +14,8 @@ In the script, use :
 
 For more specific commands, use echo with option -e :
 - echo -e "${italic}Italic text${normal}"
+- echo -e "${blink}Bliniking text${normal}"
+- echo -e "${invert}Inverted text${normal}"
 - echo -e "${COLORNAME}Colorized text${nocolor}"
 
 All tags can be used together
