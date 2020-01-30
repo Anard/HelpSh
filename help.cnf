@@ -1,10 +1,10 @@
 # Mise en forme de l'aide
 # styles
 bold=$(tput bold)
-italic=$(tput italic)
-small=$(tput small)
-blink=$(tput blinking)
-invert=$(tput inverted)
+italic='\x1b[3m'
+#small=$(tput small)
+blink='\x1b[5m'
+invert='\x1b[7m'
 underline=$(tput smul)
 nounderline=$(tput rmul)
 #nostyle, nocolor
