@@ -1,14 +1,15 @@
 # Mise en forme de l'aide
 # styles
 bold=$(tput bold)
-italic='\x1b[3m'
-#small=$(tput small)
-blink='\x1b[5m'
-invert='\x1b[7m'
 underline=$(tput smul)
 nounderline=$(tput rmul)
-#nostyle, nocolor
+#nostyle, nocolor, initializes all changes made in Terminal
 normal=$(tput sgr0)
+
+# use echo -e for all following commands
+italic='\x1b[3m'
+blink='\x1b[5m'
+invert='\x1b[7m'
 
 # colors
 black='\033[0;30m'
