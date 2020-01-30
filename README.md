@@ -10,9 +10,12 @@ Use on top of your scripts :
 In the script, use echo with:
 
 - ${bold}Bold text${normal}
+- ${underline}Underlined text${nounderline}
+
+For more specific commands, use echo with option -e and
 - ${italic}Italic text${normal}
-- ${underline}Italic text${nounderline}
 - ${COLORNAME}Colorized text${nocolor}
 
-${normmal} tag resets all changes
-See file help.cnf for other tags
+All tags can be used together
+${normal} tag resets all changes made in Terminal
+Read file help.cnf for other tags and colors names
