@@ -29,3 +29,13 @@ ${normal} tag resets all changes made in Terminal
 Read file help.cnf for other tags and colors names
 
 IMPORTANT : Always finish your command by a ${normal}. Else your changes will still apply to every Terminal output.
+
+To write on the same line (echo without new line)
+Use echo with option -ne and finish your lines by ${noNewLine}
+```
+for percent in $(seq 1 100); do
+	echo -ne "percent %${noNewLine}";
+	sleep 1;
+done
+echo
+```
