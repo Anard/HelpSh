@@ -1,12 +1,12 @@
-# HelpSh
-## Help configuration for shell scripts, formatting text in echo commands
+# shell-text
+## decorate texts for shell scripts, formatting text in echo commands
 
-File to place in /usr/local/lib for other scripts help
+File to place in /usr/lib or /usr/local/lib for other scripts
 Use on top of your scripts :
 
 ```
-configPath="/usr/local/lib"
-source ${configPath}/help.cnf
+configPath="/usr/lib"
+source ${configPath}/shell-text.cnf
 ```
 
 In the script, use :
@@ -22,6 +22,18 @@ echo -e "${italic}Italic text${normal}"
 echo -e "${blink}Bliniking text${normal}"
 echo -e "${invert}Inverted text${normal}"
 echo -e "${COLORNAME}Colorized text${nocolor}"
+```
+
+Finally, simply use for multiline decorated texts
+```
+text=$( cat << EOT
+Your multiline
+and ${bold}decorated${normal}
+text here
+EOT
+)
+
+echo -e $text
 ```
 
 All tags can be used together
