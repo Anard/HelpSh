@@ -34,7 +34,7 @@ text here
 EOT
 )
 
-echo -e $text
+echo -e "$text"
 ```
 
 All tags can be used together
