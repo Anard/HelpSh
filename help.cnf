@@ -6,7 +6,8 @@ nounderline=$(tput rmul)
 #nostyle, nocolor, initializes all changes made in Terminal
 normal=$(tput sgr0)
 
-# use echo -e for all following commands
+# IMPORTANT : use echo -e for all following commands
+
 italic='\x1b[3m'
 blink='\x1b[5m'
 invert='\x1b[7m'
@@ -32,6 +33,14 @@ lightcyan='\033[1;36m'
 white='\033[1;37m'
 #nocolor
 nocolor='\033[0m'
+
+# colors extended
+Blue="${blue}${bold}"
+Orange="${orange}${bold}"
+Red="${red}${bold}"
+White="${white}${bold}"
+Green="${green}${bold}"
+Yellow="${yellow}${bold}"
 
 # write without new line in terminal (use echo -ne and finish lines by this command)
 noNewLine='\033[0K\r';
