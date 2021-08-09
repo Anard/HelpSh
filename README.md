@@ -2,6 +2,7 @@
 ## decorate texts for shell scripts, formatting text in echo commands
 
 File to place in /usr/lib or /usr/local/lib for other scripts
+
 Use on top of your scripts :
 
 ```
@@ -37,12 +38,15 @@ echo -e $text
 ```
 
 All tags can be used together
+
 ${normal} tag resets all changes made in Terminal
+
 Read file help.cnf for other tags and colors names
 
 IMPORTANT : Always finish your command by a ${normal}. Else your changes will still apply to every Terminal output.
 
 To write on the same line (echo without new line)
+
 Use echo with option -ne and finish your lines by ${noNewLine}
 ```
 for percent in $(seq 1 100); do
