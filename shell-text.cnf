@@ -35,12 +35,23 @@ white='\033[1;37m'
 nocolor='\033[0m'
 
 # colors extended
-Blue="${blue}${bold}"
-Orange="${orange}${bold}"
+Black="${black}${bold}"
 Red="${red}${bold}"
-White="${white}${bold}"
 Green="${green}${bold}"
+Orange="${orange}${bold}"
+Brown="${brown}${bold}"
+Blue="${blue}${bold}"
+Purple="${purple}${bold}"
+Cyan="${cyan}${bold}"
+LightGray="${lightgray}${bold}"
+DarkGray="${darkgray}${bold}"
+LightRed="${lightred}${bold}"
+LightGreen="${lightgreen}${bold}"
 Yellow="${yellow}${bold}"
+LightBlue="${lightblue}${bold}"
+LightPurple="${lightpurple}${bold}"
+LightCyan="${lightcyan}${bold}"
+White="${white}${bold}"
 
 # write without new line in terminal (use echo -ne and finish lines by this command)
 noNewLine='\033[0K\r';
